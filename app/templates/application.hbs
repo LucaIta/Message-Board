@@ -1,3 +1,11 @@
-<h2 id="title">Welcome to Ember</h2>
-
-{{outlet}}
+<div class="container">
+  <header>
+    <h1>Luca's Message Board</h1>
+  </header>
+  <hr>
+    {{outlet}}
+  <hr>
+  <footer>
+    {{#link-to 'index'}}Homepage{{/link-to}}
+  </footer>
+</div>
