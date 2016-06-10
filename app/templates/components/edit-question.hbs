@@ -1,0 +1,17 @@
+<h2>Edit the question:</h2>
+
+<form>
+  <div class="form-group">
+    <label for="editedAuthor">New Author</label>
+    {{input value=editedAuthor id="editedAuthor"}}
+  </div>
+  <div class="form-group">
+    <label for="newQuestion">New Question</label>
+    {{input value=newQuestion id="newQuestion"}}
+  </div>
+  <div class="form-group">
+    <label for="additionalNotes">New Additional notes</label>
+    {{input value=additionalNotes id="additionalNotes"}}
+  </div>
+  <button {{action 'edit' question}}>Edit question</button>
+</form>

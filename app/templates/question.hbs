@@ -1,11 +1,18 @@
-<h2>Question: {{model.question}}</h2>
+<div class="row">
+  <div class="col-md-6">
+    <h2>Question: {{model.question}}</h2>
+    <p>Author: {{model.author}}</p>
+    <p>Notes: {{model.additionalNotes}}</p>
+    {{delete-question delete="delete" question=model}}
+  </div>
 
-<p>Author: {{model.author}}</p>
-<p>Notes: {{model.additionalNotes}}</p>
+  <div class="col-md-6">
+    {{edit-question edit="edit" question=model}}
+  </div>
+
+</div>
 
 <hr>
-
-{{delete-question delete="delete" question=model}}
 
 {{answer-tile answers=model.answers}}
 

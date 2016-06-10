@@ -1,7 +1,17 @@
 <form>
-  <label for="author">Author</label>
-  {{input value=author id="author"}}
-  <label for="answer">Answer</label>
-  {{input value=answer id="answer"}}
+  <div class="form-group">
+    <label for="author">Author</label>
+    {{input value=author id="author"}}
+  </div>
+  <div class="form-group">
+    <label for="answer">Answer</label>
+    {{input value=answer id="answer"}}
+  </div>
   <button {{action 'save'}}>Add answer</button>
 </form>
+
+
+<div class="form-group">
+  <label for="editedAuthor">New Author</label>
+  {{input value=editedAuthor id="editedAuthor"}}
+</div>
