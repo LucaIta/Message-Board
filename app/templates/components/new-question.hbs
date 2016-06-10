@@ -1,0 +1,9 @@
+<form>
+  <label for="author">Author</label>
+  {{input value=author id="author"}}
+  <label for="question">Question</label>
+  {{input value=question id="question"}}
+  <label for="additionalNotes">Additional notes</label>
+  {{input value=additionalNotes id="additionalNotes"}}
+  <button {{action 'save'}}>Add question</button>
+</form>

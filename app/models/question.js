@@ -1,13 +1,8 @@
-import Model from 'ember-data/model';
-// import attr from 'ember-data/attr';
-// import { belongsTo, hasMany } from 'ember-data/relationships';
+import DS from 'ember-data';
 
-export default Model.extend({
-
+export default DS.Model.extend({
+  question: DS.attr(),
+  author: DS.attr(),
+  answer: DS.hasMany('answer', {async:true}),
+  additionalNotes: DS.attr(),
 });
-
-
-// question itself
-// author
-// additional notes
-// answers
