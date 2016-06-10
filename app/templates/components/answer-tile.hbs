@@ -1,6 +1,9 @@
 <h2>Answers</h2>
-{{#each answers as |answer|}}
-  <p>Author: {{answer.author}}</p>
-  <p>Answer: {{answer.answer}}</p>
-  <br>
-{{/each}}
+<div class="answers">
+  {{#each answers as |answer|}}
+  <hr>
+    <p>Author: {{answer.author}}</p>
+    <p>Answer: {{answer.answer}}</p>
+    <br>
+  {{/each}}
+</div>
