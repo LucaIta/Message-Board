@@ -1,0 +1,4 @@
+<h4>Favourite Questions:</h4>
+{{#each favouriteQuestions.questions as |question|}}
+  <p>{{#link-to 'question' question.id}} {{question.question}} {{/link-to}}</p>
+{{/each}}
