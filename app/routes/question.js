@@ -30,6 +30,12 @@ export default Ember.Route.extend({
         }
       });
       question.save();
+    },
+    upvote(answer){
+      // var answer = this.store.createRecord('answer', answer);
+      // answer.set('votes', answer.get('votes') + 1);
+      answer.set('votes', answer.get('votes') + 1);
+      answer.save();
     }
   }
 });
