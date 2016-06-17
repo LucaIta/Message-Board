@@ -1,9 +1,10 @@
 <h2>Answers</h2>
 <div class="answers">
-  {{#each answers as |answer|}}
+  {{#each sortedAnswer as |answer|}}
   <hr>
     <p>Author: {{answer.author}}</p>
     <p>Answer: {{answer.answer}}</p>
+    <p>Votes: {{answer.votes}}</p>
     <br>
     {{upvote-answer answer=answer upvote="upvote"}}
   {{/each}}
