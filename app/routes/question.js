@@ -41,6 +41,8 @@ export default Ember.Route.extend({
     tagQuestion(question,tag){
       question.set('tag', tag);
       question.save();
+      tag.get('questions').addObject(question);
+      tag.save();
     }
   }
 });

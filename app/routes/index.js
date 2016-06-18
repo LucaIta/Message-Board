@@ -1,8 +1,11 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model () {
-    return this.store.findAll('question');
+  model() {
+    return Ember.RSVP.hash({
+      questions: this.store.findAll('question'),
+      tags: this.store.findAll('tag')
+    })
   },
   actions: {
     save(params) {

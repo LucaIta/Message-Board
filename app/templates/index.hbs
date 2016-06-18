@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-md-8">
-    {{question-tile questions=model}}
+    {{question-tile questions=model.questions}}
   </div>
   <div class="col-md-4">
     {{new-question save="save"}}
@@ -8,4 +8,5 @@
 </div>
 {{new-tag saveTag="saveTag"}}
 <hr>
+{{tag-list tags=model.tags}}
 {{favourite-questions-tile}}
