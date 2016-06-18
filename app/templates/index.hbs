@@ -5,8 +5,9 @@
   <div class="col-md-4">
     {{new-question save="save"}}
     {{tag-list deleteTag="deleteTag" tags=model.tags}}
+    {{new-tag saveTag="saveTag"}}
   </div>
 </div>
-{{new-tag saveTag="saveTag"}}
+
 <hr>
 {{favourite-questions-tile}}
