@@ -1,19 +1,19 @@
 <div class="row">
   <div class="col-md-8">
-    <h2>Question: {{model.question}}</h2>
-    <p>Author: {{model.author}}</p>
-    <p>Notes: {{model.additionalNotes}}</p>
-    {{delete-question delete="delete" question=model}}
+    <h2>Question: {{model.question.question}}</h2>
+    <p>Author: {{model.question.author}}</p>
+    <p>Notes: {{model.question.additionalNotes}}</p>
+    {{delete-question delete="delete" question=model.question}}
   </div>
 
   <div class="col-md-4">
-    {{edit-question edit="edit" question=model}}
+    {{edit-question edit="edit" question=model.question}}
   </div>
 
 </div>
 
 <hr>
 
-{{answer-tile answers=model.answers upvote="upvote"}}
-
-{{new-answer save="save" question=model}}
+{{answer-tile answers=model.question.answers upvote="upvote"}}
+{{new-answer save="save" question=model.question}}
+{{tag-tile tags=model.tags question=model.question tagQuestion="tagQuestion"}}
