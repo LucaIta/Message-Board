@@ -15,6 +15,9 @@ export default Ember.Route.extend({
     saveTag(params){
       var tag = this.store.createRecord('tag', params);
       tag.save();
+    },
+    deleteTag(tag){
+      tag.destroyRecord();
     }
   }
 });

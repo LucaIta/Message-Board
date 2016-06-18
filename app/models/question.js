@@ -6,5 +6,5 @@ export default DS.Model.extend({
   answers: DS.hasMany('answer', {async:true}),
   additionalNotes: DS.attr(),
   date: DS.attr(),
-  tag: DS.belongsTo('tag', {async:true})
+  tags: DS.hasMany('tag', {async:true})
 });
