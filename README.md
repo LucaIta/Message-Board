@@ -15,9 +15,8 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* Clone the repository by running in your terminal the following command : 'git clone https://github.com/LucaIta/Message-Board'
+* 'git clone https://github.com/LucaIta/Message-Board'
 * change into the new directory
-* Run into your terminal the following commands: 
 * `npm install`
 * `bower install`
 
