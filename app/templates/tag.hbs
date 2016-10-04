@@ -1,5 +1,5 @@
 <h2>Tag: {{model.tagName}}</h2>
 <p>Questions:</p>
 {{#each model.questions as |question|}}
-  <p>{{question.question}}</p>
+  <p>{{#link-to 'question' question.id}} {{question.question}} {{/link-to}}</p>
 {{/each}}
