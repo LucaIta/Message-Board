@@ -3,6 +3,12 @@
 
 This application allow the user to post questions and answer on a message board.
 
+## Try it
+
+Try it live here:
+
+* http://lucaita.github.io/Message-Board/
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
