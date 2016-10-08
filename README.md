@@ -3,7 +3,7 @@
 
 This application allow the user to post questions and answer on a message board.
 
-## Try it live here
+## Try it live
 
 * http://lucaita.github.io/Message-Board/
 
